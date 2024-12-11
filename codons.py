@@ -1,6 +1,6 @@
-def create_codon_dict(file_path):\
-     path="data/codons.txt"
-     file = open(file_path)
+def create_codon_dict(file_path):
+    path = "data/codons.txt"
+    file = open(file_path)
     rows = file.readlines()
     file.close()
     
@@ -16,5 +16,6 @@ def create_codon_dict(file_path):\
             codon_dict[codon] = amino_acid_abbr  # Update the dictionary
     
     return codon_dict
+
 
 
